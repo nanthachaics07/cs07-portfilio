@@ -80,6 +80,10 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #27e187;
   z-index: 10;
+  &--top {
+    position: fixed;
+    top: 0;
+}
 }
 .et-hero-tabs-container--top {
   position: fixed;
@@ -684,9 +688,4 @@ a {
 
 
 /*under page2*/
-
-
-
-
-
 
