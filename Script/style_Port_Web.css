@@ -369,7 +369,7 @@ a {
 }
 
 .project{
-  color: #fff;
+  color: #1f1f1f;
   margin-top: 1.5rem;
   display: inline-block;
   text-transform: uppercase;
@@ -528,9 +528,9 @@ a {
       overflow: hidden;
       border-radius: 1rem;
   }
-  .btn a{
+  .btn a[title="CONTACT ME"]{
     text-decoration: none;
-    color: #fff;
+    color: #1f1f1f;
     display: contents;
     cursor: pointer;
   
