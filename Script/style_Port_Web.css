@@ -634,6 +634,13 @@ a {
     color: #1f1f1f;
   }
 
+  .project{
+    font-size: 1.1rem;
+  }
+  .project:hover{
+    font-size: 1.1rem;
+  }
+
 }
 
 @media(max-width:500px){
