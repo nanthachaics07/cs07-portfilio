@@ -122,7 +122,7 @@ new StickyNavigation();
 
 
 class onetapToOpenImage {
-  
+
   showImageClick = document.getElementById("clickMeImage");
   myImage = document.getElementById("imageURL");
 
@@ -139,5 +139,7 @@ class onetapToOpenImage {
 }
 // Instantiate the class
 new onetapToOpenImage();
+
+
 
 
