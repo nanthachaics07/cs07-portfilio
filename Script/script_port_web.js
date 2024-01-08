@@ -118,4 +118,26 @@ class StickyNavigation {
   
 new StickyNavigation();
   
+
+
+
+class onetapToOpenImage {
   
+  showImageClick = document.getElementById("clickMeImage");
+  myImage = document.getElementById("imageURL");
+
+  /**
+ * Initialize the constructor.
+//  * @param {type} paramName - description of parameter
+//  * @return {type} description of return value
+ */
+  constructor() {
+      this.showImageClick.addEventListener("click", () => {
+          this.myImage.style.display = "block";
+      });
+  }
+}
+// Instantiate the class
+new onetapToOpenImage();
+
+
