@@ -15,7 +15,7 @@
 // const codeHider = new HideHTMLCode('.hidden');
 
 // // Call the hideElements method
-// codeHider.hideElements("HideCode");
+// codeHider.hideElements();
 
 
 document.addEventListener("DOMContentLoaded", function() {
