@@ -638,6 +638,10 @@ a {
   .project:hover{
     font-size: 1.1rem;
   }
+  .sidemenu{
+    width: 400px;
+    height: 100vh;
+  }
 
 }
 
@@ -696,10 +700,22 @@ a {
 
 }
 
+@media(max-width:550px){
+  .et-hero-tabs , .et-hero-tab{
+    visibility: hidden;
+    display: none;
+  }
+}
 
 @media (max-width:500px){
   .et-hero-tabs{
     display:flex;
+  }
+}
+
+@media (max-width:310px){
+  .sidemenu{
+    width: 200px;
   }
 }
 
