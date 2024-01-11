@@ -728,6 +728,7 @@ a {
   {
     .sidemenu{
       width: 400px;
+      height: 100vh;
     }
 }
 
