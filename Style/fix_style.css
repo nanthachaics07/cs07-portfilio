@@ -1,0 +1,32 @@
+/* sidemanu */
+
+.sidemenu{
+  height: 100vh;
+  min-width: 320px;
+  max-width: 300px;
+  border-right: 1px solid #565656;
+  border-left: 1px solid #565656;
+  padding: 2rem;
+  position:sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidemenu .btn{
+  margin-top: 2rem;
+}
+
+.sidemenu .btn--line{
+  margin-top: 1rem;
+}
+
+.avatar--cover{
+  position: relative;
+  height: 290px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  /*filter: grayscale(100%);*/
+}
