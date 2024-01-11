@@ -5,12 +5,6 @@
 
 class StickyNavigation {
 	
-  /**
-   * The constructor function initializes variables and sets up event listeners for tab clicks,
-   * scrolling, and window resizing.
-   * 
-   * ปิดหน้าต่าง tab 
-   */
     constructor() {
       this.currentId = null;
       this.currentTab = null;
@@ -24,13 +18,6 @@ class StickyNavigation {
     }
     
   /**
-   * The function scrolls the page to a specific element when a tab is clicked.
-   * event - The event parameter is the event object that is triggered when the tab is clicked. It
-   * contains information about the event, such as the target element and any additional data associated
-   * with the event.
-   * element - The `element` parameter is the tab element that was clicked. It is typically an
-   * HTML element, such as a button or a link, that triggers the tab click event.
-   * 
    * ปรับเลื่อนตามเมาส์
    */
     onTabClick(event, element) {
@@ -42,8 +29,6 @@ class StickyNavigation {
     }
     
   /**
-   * The function onScroll() checks the position of the tab container and finds the current tab selector.
-   * 
    * ตรวจตำแหน่งScroll
    */
     onScroll() {
