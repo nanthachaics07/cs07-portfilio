@@ -368,6 +368,13 @@ a {
   border-radius: 1rem;
 }
 
+#listProject{
+  text-indent: 1.2rem;
+}
+#listProjectTop{
+  padding-bottom: 5px;
+}
+
 #service_2{
   margin-top: 2rem;
 }
