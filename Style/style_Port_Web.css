@@ -721,13 +721,14 @@ a {
 
 /* Iphone XS only */
 @media only screen
-and (device-width : 375px)
-and (device-height : 812px)
-and (-webkit-device-pixel-ratio : 3)and (orientation : portrait)
-{
-  .sidemenu{
-    width: 400px;
-  }
+  and (device-width : 375px)
+  and (device-height : 812px)
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : portrait)
+  {
+    .sidemenu{
+      width: 400px;
+    }
 }
 
 
