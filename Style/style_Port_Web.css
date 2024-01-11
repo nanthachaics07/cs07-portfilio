@@ -719,6 +719,7 @@ a {
   }
 }
 
+/* Iphone XS only */
 @media only screen
 and (device-width : 375px)
 and (device-height : 812px)
