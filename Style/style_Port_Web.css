@@ -639,7 +639,7 @@ a {
     font-size: 1.1rem;
   }
   .sidemenu{
-    width: 400px;
+    width: 100vw;
     height: 100vh;
   }
 
@@ -727,7 +727,7 @@ a {
   and (orientation : portrait)
   {
     .sidemenu{
-      width: 400px;
+      width: 100vw;
       height: 100vh;
     }
 }
