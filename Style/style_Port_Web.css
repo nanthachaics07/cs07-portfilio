@@ -241,8 +241,8 @@ a {
 
 .sidemenu{
   height: 100vh;
-  min-width: 350px;
-  max-width: 300px;
+  min-width: 340px;
+  max-width: 350px;
   border-right: 1px solid #565656;
   border-left: 1px solid #565656;
   padding: 2rem;
@@ -783,6 +783,13 @@ a {
       width: 100vw;
       height: 100vh;
     }
+}
+
+@media (min-width:2200px){
+  .sidemenu{
+    width: 400px;
+    /* height: 100vh; */
+  }
 }
 
 
