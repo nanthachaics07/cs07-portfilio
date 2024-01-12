@@ -10,7 +10,7 @@
   background-color: red;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   text-align: center;
   text-shadow: #fff;
   text-size-adjust: 100%;
