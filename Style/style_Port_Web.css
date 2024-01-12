@@ -41,7 +41,12 @@ img{
   /*background: url('images);*/
   background-size:cover;
   position:relative;
+
+  /* background: linear-gradient(300deg, #1A1F1F, #1C1F1E, #1f1f1f);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite; */
 }
+
 /* text css above hero image*/
 .hero_title {
   font-size: 4.5rem;
@@ -62,7 +67,22 @@ img{
 /* ################################ */
 
 body {
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
+  background: linear-gradient(300deg, #121014, #1C1F1E, #1f1f1f);
+  background-size: 180% 180%;
+  animation: gradient-animation 9s ease infinite;
+
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 a {
@@ -776,3 +796,5 @@ a {
 .chageColor:hover{
   border-color: #27e187;
 }
+
+
