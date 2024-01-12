@@ -627,7 +627,8 @@ a {
       margin-top: 1rem;
   }
 
-  .intro--flex--container h1,.intro--flex--container p{
+  .intro--flex--container h1,
+  .intro--flex--container p{
       margin-top: 0;
   }
 
