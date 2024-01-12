@@ -788,7 +788,7 @@ a {
 @media (min-width:2200px){
   .sidemenu{
     width: 400px;
-    /* height: 100vh; */
+    height: 80vh;
   }
 }
 
