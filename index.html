@@ -6,8 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" 
       rel="stylesheet">
     <link rel="stylesheet" href="./Style/style_Port_Web.css">
+    <link rel="stylesheet" href="./Style/fix_style.css">
     <link rel="icon" type="image" href="https://drive.google.com/file/d/1wK8_0x-oDdrnNkWmjRjyRvNfRJUUZwDF/view?usp=drive_link">
-    <link rel="icon" href="./picture/IMG_2567.JPG" type="image/x-icon">
+    <link rel="icon" href="https://drive.google.com/file/d/1PweenvUmqK6uhMZFvyxv8Q_xsV_2uI6r/view?usp=drive_link" type="image/x-icon">
     <script src="./javascript/HideScript.js" type="text/javascript" defer></script>
 
     <!-- re move external link -->
@@ -19,13 +20,18 @@
 
   </head>
   <body>
+
+    <!-- Debug button -->
+    <button id="debugButton">Debug</button>
+
       <!-- main banner --> 
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
             <div class="hero-text">
                 <h2 class="hero_title">Hello, it's me Safe</h2>
-                <p class="hero_desc">Graduated from RMUTSB</p>
+                <p class="hero_desc">"The bast way to predict the future is to 
+                    <span style="color: #27e187;">create</span> it"</p>
             </div>
             </div>
         </div>
@@ -52,13 +58,13 @@
       <!-- left join img-->
       <div class="sidemenu">
         <div class="avatar--cover">
-          <a href="https://drive.google.com/file/d/1FaxE_mKB8zQ12-iptEx6lsT0M3uQLwa0/view?usp=sharing">
-            <img src="picture/safe001.jpg" alt="">
+          <a href="https://drive.google.com/file/d/1p6W9BglAA-uzb9fRI6HgbJ5pjKdi8Ris/view?usp=drive_link">
+            <img src="./picture/safe001.jpg" alt="image">
           </a>
 
         </div>
         <h3 class="name">Nanthachai Intarpradit</h3>
-        <p class="position">Computer Science</p>
+        <p class="position">"The bast way to predict the future is to create it"</p>
 
         <div class="social--icons">
             <!-- <a href="https://twitter.com/SAFE9692" class="social--icon" target="_blank">
@@ -105,11 +111,11 @@
                   </p>
                 <div class="intro--flex--container">
                   <div class="intro--flex">
-                    <h1>4+</h1>
+                    <h1>5+</h1>
                     <p>YEAR OF LEARNING CODE</p>
                   </div>
                   <div class="intro--flex">
-                    <h1>7+</h1>
+                    <h1>8+</h1>
                     <p>FINAL LAB PROJECT COMPLETED</p>
                   </div>
                 </div>
@@ -167,7 +173,7 @@
                   
                 <div>
                   <div class="experience">
-                    <p class="date">2020 - 2024</p>
+                    <p class="date">2020 - 2024 <span>(Graduated)</span></p>
                     <h3>University</h3>
                     <p class="school">RMUTSB University</p>
                     <div class="circle"></div>
@@ -205,8 +211,12 @@
 
                   <div class="service">
                     <h3>PEA Internship Project & Experience</h3>
-                    <p>
+                    <p id="listProjectTop">
                       Activities during internship (4 Position)
+                      <p id="listProject">• Developer</p>
+                      <p id="listProject">• Tester</p>
+                      <p id="listProject">• UX/UI Designer</p>
+                      <p id="listProject">• Business Analyst</p>
                     </p>
                     <a href="https://PEAinturnship.softr.app" class="project chageColor" target="_blank" title="INTERNSHIP EXPERIENCES">
                       INTERNSHIP EXPERIENCES
@@ -232,12 +242,12 @@
                       class="project chageColor" target="_blank" title="CODE & PROGRAM">
                       PROJECT PRESENTATION
                     </a>
+                    <a href="https://github.com/nanthachaics07/face-detection" class="project" target="_blank" title="TREATISE">
+                      SOURCE CODE
+                    </a>                    
                     <a href="https://drive.google.com/file/d/109h5SaLrxo6FXZamWCCZ815sldjAJ3sM/view?usp=sharing" onclick="external_link(this);return false;"
                     class="project" target="_blank" title="TREATISE">
                       TREATISE
-                    </a>
-                    <a href="https://github.com/nanthachaics07/face-detection" class="project" target="_blank" title="TREATISE">
-                      SOURCE CODE
                     </a>
                   </div>
 
@@ -262,6 +272,17 @@
                     <a href="https://drive.google.com/file/d/1sJ-ptXPevNHQk5lJQA6X7oKtTsk9kcnm/view?usp=sharing" onclick="external_link(this);return false;"
                     class="project" target="_blank" title="TREATISE">
                       CODE
+                    </a>
+                  </div>
+
+                  <div class="service">
+                    <h3>OracleDB DATAInstallation Guide</h3>
+                    <p>
+                      LAB “simulate convenience-store and print receipt” ( For Oracle APEX ONLY ) (CO-OP Lab)
+                    </p>
+                    <a href="https://drive.google.com/file/d/1-O7XQCiXlAP6nqKNc0EKAUBAUo-bJKXB/view?usp=sharing" onclick="external_link(this);return false;"
+                    class="project" target="_blank" title="TREATISE">
+                      MANUAL
                     </a>
                   </div>
 
@@ -310,8 +331,8 @@
                 <div class="top--title">skill</div>
                 <h2 class="title">Technical <span>Skill & Tools</span></h2>
 
-                <div id="topic-skill1"><p>Artificial Intelligence & Linear
-                  Regression Tools:</p></div>
+                <div id="topic-skill1" style="font-size: 1.2rem;">
+                  <p>▸ Artificial Intelligence & Linear Regression Tools:</p></div>
                 <div class="skills">
 
                   <div>
@@ -344,7 +365,7 @@
 
                 </div>
 
-                <div class="topic-skill2"><p>Web Technologies & Frameworks:</p></div>
+                <div class="topic-skill2"><p>▸ Web Technologies & Frameworks:</p></div>
                 <div class="skills">
                 
                   <div>
@@ -377,7 +398,7 @@
                 
                 </div>
 
-                <div class="topic-skill2"><p>Scripts/OOP:</p></div> 
+                <div class="topic-skill2"><p>▸ Scripts/OOP:</p></div> 
                 <div class="skills">
                   <div>
                     <div class="skill">
@@ -417,7 +438,7 @@
                   </div>
                 </div>
 
-                <div class="topic-skill2"><p>UI/UX Design:</p></div> 
+                <div class="topic-skill2"><p>▸ UI/UX Design & Tools:</p></div> 
                 <div class="skills">
                   <div>
                     <div class="skill">
@@ -446,9 +467,18 @@
                     </div>
                     <p>Softr</p>
                   </div> 
+                  <div>
+                    <div class="skill">
+                        <div class="skill--img--cover">
+                            <img src="./picture/Webflow.png" alt="img">
+                        </div>
+                        <!-- <h3>70%</h3> -->
+                    </div>
+                    <p>Webflow</p>
+                  </div> 
                 </div>
 
-                <div class="topic-skill2"><p>APIs & API Test Tool:</p></div> 
+                <div class="topic-skill2"><p>▸ APIs & Frameworks, API Test Tool:</p></div> 
                 <div class="skills">
                   <div>
                     <div class="skill">
@@ -480,6 +510,15 @@
                   <div>
                     <div class="skill">
                         <div class="skill--img--cover">
+                            <img src="./picture/GoFiber.png" alt="img">
+                        </div>
+                        <!-- <h3>60%</h3> -->
+                    </div>
+                    <p>Fiber</p>
+                  </div>
+                  <div>
+                    <div class="skill">
+                        <div class="skill--img--cover">
                             <img src="./picture/posman.png" alt="img">
                         </div>
                         <!-- <h3>60%</h3> -->
@@ -489,7 +528,7 @@
 
                 </div>
 
-                <div class="topic-skill2"><p>Database:</p></div> 
+                <div class="topic-skill2"><p>▸ Database:</p></div> 
                 <div class="skills">
                   <div>
                     <div class="skill">
@@ -522,7 +561,7 @@
                   </div>
                 </div>
 
-                <div class="topic-skill2"><p>Web Debug Tools:</p></div> 
+                <div class="topic-skill2"><p>▸ Web Debug Tools:</p></div> 
                 <div class="skills">
                   <div>
                     <div class="skill">
@@ -535,7 +574,7 @@
                   </div>
                 </div>
 
-                <div class="topic-skill2"><p>Version Control & Other Tools:</p></div> 
+                <div class="topic-skill2"><p>▸ Version Control & Other Tools:</p></div> 
                 <div class="skills">
                   <div>
                     <div class="skill">
@@ -567,7 +606,7 @@
 
                 </div>
 
-                <div class="topic-skill2"><p>ENV and Deployment Tools:</p></div> 
+                <div class="topic-skill2"><p>▸ ENV and Deployment:</p></div> 
                 <div class="skills">
                   <div>
                     <div class="skill">
@@ -591,7 +630,11 @@
 
 
               <!-- during study -->
-                <div class="topic-skill2"><p style="color: #ECDE35;">During Learning & Practice:</p></div>  
+                <div class="topic-skill2">
+                  <p style="color: #ECDE35; font-weight: bold; font-size: 1.5rem;">
+                    During Learning <span>&</span>  Practice:
+                  </p>
+                </div>  
                 <div>
                   <div class="experience">
                     <h3>Kubernetes</h3>
@@ -607,13 +650,19 @@
                 
                   <div class="experience">
                     <h3>React</h3>
-                    <p class="school">Web Fullstack</p>
+                    <p class="school">Front-end framework</p>
                     <div class="circle"></div>
                   </div>
 
                   <div class="experience">
                     <h3>Angular</h3>
-                    <p class="school">Front-end</p>
+                    <p class="school">Front-end framework</p>
+                    <div class="circle"></div>
+                  </div>
+
+                  <div class="experience">
+                    <h3>.NET</h3>
+                    <p class="school">CLR</p>
                     <div class="circle"></div>
                   </div>
 
@@ -700,7 +749,10 @@
                     <p>ID : saferockstar</p>
                   </div>
                 </div>
-                  
+                <div class="thanks">
+                  <h1><span style="color: #27e187;">THANKS</span> YOU</h1>
+                  <h2>FOR <span> VISITING</span></h2>
+                </div>
               </div>
             </div>
 

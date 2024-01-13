@@ -22,3 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const codeHider = new HideHTMLCode('.hidden');
   codeHider.hideElements();
 });
+
+
+// debugging button
+document.getElementById('debugButton').addEventListener('click', function() {
+
+  alert('This page is now in maintenance mode.');
+});
