@@ -27,5 +27,5 @@ document.addEventListener("DOMContentLoaded", function() {
 // debugging button
 document.getElementById('debugButton').addEventListener('click', function() {
 
-  alert('Debug');
+  alert('This page is now in maintenance mode.');
 });
