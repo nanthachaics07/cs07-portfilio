@@ -1,4 +1,7 @@
 
+// alert('This page is now in maintenance mode.');
+
+
 // class HideHTMLCode {
 //   constructor(selector) {
 //       this.elements = document.querySelectorAll(selector);
@@ -29,3 +32,4 @@ document.getElementById('debugButton').addEventListener('click', function() {
 
   alert('This page is now in maintenance mode.');
 });
+
