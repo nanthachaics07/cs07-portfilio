@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Debugging button
-document.getElementById('debugButton').addEventListener('click', function() {
+// document.getElementById('debugButton').addEventListener('click', function() {
 
-  alert('This page is now in maintenance mode.');
-});
+//   alert('This page is now in maintenance mode.');
+// });
 
