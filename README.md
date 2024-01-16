@@ -1,6 +1,7 @@
-# html-portfilio
+# Web-portfilio
 
 Edit, Deploy by > Nanthachai Intarpradit <
+Website: https://nanthachaics07.github.io/cs07-portfilio/
 
 Contract me !
 E-mail : nanthachaiintarpradit2002@gmail.com

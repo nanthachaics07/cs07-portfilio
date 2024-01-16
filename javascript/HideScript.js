@@ -1,4 +1,7 @@
 
+// alert('This page is now in maintenance mode.');
+
+
 // class HideHTMLCode {
 //   constructor(selector) {
 //       this.elements = document.querySelectorAll(selector);
@@ -24,8 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Debugging button
-document.getElementById('debugButton').addEventListener('click', function() {
+// debugging button
+// document.getElementById('debugButton').addEventListener('click', function() {
 
-  alert('This page is now in maintenance mode.');
-});
+//   alert('This page is now in maintenance mode.');
+// });
+
