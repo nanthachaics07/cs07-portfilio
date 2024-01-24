@@ -240,6 +240,8 @@ a {
 /* sidemanu */
 
 .sidemenu{
+  position: absolute;
+  /* text-align: center; */
   height: 100vh;
   min-width: 340px;
   max-width: 350px;
@@ -797,7 +799,7 @@ a {
 
 .chageColor{
   color:#1f1f1f;
-  background-color: #ECDE35;
+  background-color: #FFD300;
 }
 
 .chageColor:hover{
