@@ -5,6 +5,7 @@
 class ScrollToTopBtn {
   constructor() {
     this.init();
+    this.changeColor();
   }
 
   init() {
@@ -25,6 +26,27 @@ class ScrollToTopBtn {
       document.documentElement.scrollTop = 0;
     });
   }
+
+
+  changeColor() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", function () {
+      // Check if user has scrolled to the bottom of the page
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        scrollToTopBtn.style.backgroundColor = "#FFD300"; // Change color as needed
+      // } else {
+      //   scrollToTopBtn.style.backgroundColor = "#27e187"; // Default color when not at the bottom
+      }
+    });
+
+    scrollToTopBtn.addEventListener("click", function () {
+      // Scroll to the top of the page
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  }
+
 }
 
 new ScrollToTopBtn();
