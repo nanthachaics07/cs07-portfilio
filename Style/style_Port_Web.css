@@ -42,7 +42,6 @@ img{
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  background-color: #27e187;
   color: #1f1f1f;
   border: none;
   border-radius: 5px;
@@ -50,6 +49,7 @@ img{
   cursor: pointer;
   font-weight: bolder;
 }
+
 
 
 /* hero background image */

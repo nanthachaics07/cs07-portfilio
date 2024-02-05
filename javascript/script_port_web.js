@@ -5,51 +5,52 @@
 class ScrollToTopBtn {
   constructor() {
     this.init();
-    this.changeColor();
   }
 
   init() {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
     window.addEventListener("scroll", function () {
-      // Show button when scrolls down 20px from the top
-      if (document.body.scrollTop > 7600 || document.documentElement.scrollTop > 7600) {
+      // Show button when scrolls down 8200px from the top
+      if (document.body.scrollTop > 8200 || document.documentElement.scrollTop > 8200) {
         scrollToTopBtn.style.display = "block";
       } else {
         scrollToTopBtn.style.display = "none";
       }
-    });
 
-    scrollToTopBtn.addEventListener("click", function () {
-      // Scroll to the top of the page
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    });
-  }
-
-
-  changeColor() {
-    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-    window.addEventListener("scroll", function () {
-      // Check if user has scrolled to the bottom of the page
+      // Check if has scrolled to the bottom of the page
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         scrollToTopBtn.style.backgroundColor = "#FFD300"; // Change color as needed
-      // } else {
-      //   scrollToTopBtn.style.backgroundColor = "#27e187"; // Default color when not at the bottom
+      } else {
+        scrollToTopBtn.style.backgroundColor = "#FFD300"; // Default color when not at the bottom
       }
     });
 
     scrollToTopBtn.addEventListener("click", function () {
-      // Scroll to the top of the page
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+      // Smooth scroll to the top of the page
+      scrollToTop(1000); // Adjust the duration (in milliseconds)
     });
-  }
 
+    function scrollToTop(duration) {
+      const start = document.documentElement.scrollTop || document.body.scrollTop;
+      const startTime = performance.now();
+
+      function scrollAnimation(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        document.documentElement.scrollTop = document.body.scrollTop = start * (1 - progress);
+
+        if (progress < 1) {
+          requestAnimationFrame(scrollAnimation);
+        }
+      }
+      requestAnimationFrame(scrollAnimation);
+    }
+  }
 }
 
 new ScrollToTopBtn();
+
 
 
 class StickyNavigation {
@@ -155,6 +156,7 @@ new StickyNavigation();
 
 
 
+// เปิดเพจเดียว
 class onetapToOpenImage {
 
   showImageClick = document.getElementById("clickMeImage");
