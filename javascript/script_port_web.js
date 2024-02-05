@@ -12,18 +12,18 @@ class ScrollToTopBtn {
 
     window.addEventListener("scroll", function () {
       // Show button when scrolls down 8200px from the top
-      if (document.body.scrollTop > 8500 || document.documentElement.scrollTop > 8500) {
+      if (document.body.scrollTop > 9900 || document.documentElement.scrollTop > 9900) {
         scrollToTopBtn.style.display = "block";
       } else {
         scrollToTopBtn.style.display = "none";
       }
 
       // Check if has scrolled to the bottom of the page
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        scrollToTopBtn.style.backgroundColor = "#FFD300"; // Change color as needed
-      } else {
-        scrollToTopBtn.style.backgroundColor = "#FFD300"; // Default color when not at the bottom
-      }
+      // if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      //   scrollToTopBtn.style.backgroundColor = "#FFD300"; // Change color as needed
+      // } else {
+      //   scrollToTopBtn.style.backgroundColor = "#FFD300"; // Default color when not at the bottom
+      // }
     });
 
     scrollToTopBtn.addEventListener("click", function () {
