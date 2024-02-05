@@ -35,6 +35,23 @@ img{
   object-fit:cover;
 }
 
+/* scrollToTopBtn */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #27e187;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+
 /* hero background image */
 .bgimage {
   height:100vh;

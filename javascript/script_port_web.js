@@ -2,6 +2,33 @@
 
 //  ปล.ใช้ extension auto comment เอา ##############################################################
 
+class ScrollToTopBtn {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", function () {
+      // Show button when scrolls down 20px from the top
+      if (document.body.scrollTop > 7000 || document.documentElement.scrollTop > 7000) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+
+    scrollToTopBtn.addEventListener("click", function () {
+      // Scroll to the top of the page
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  }
+}
+
+new ScrollToTopBtn();
+
 
 class StickyNavigation {
 	
