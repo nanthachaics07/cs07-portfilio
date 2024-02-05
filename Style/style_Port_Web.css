@@ -725,6 +725,10 @@ a {
     visibility: hidden;
     display: none;
   }
+  #scrollToTopBtn{
+    right: 40px;
+    bottom: 40px;
+  }
 
 }
 
@@ -783,6 +787,11 @@ a {
     display:flex;
   }
 
+  #scrollToTopBtn{
+    right: 40px;
+    bottom: 40px;
+  }
+
 }
 
 @media (max-width:310px){
@@ -801,6 +810,10 @@ a {
     .sidemenu{
       width: 100vw;
       height: 100vh;
+    }
+    #scrollToTopBtn{
+      right: 40px;
+      bottom: 40px;
     }
 }
 
