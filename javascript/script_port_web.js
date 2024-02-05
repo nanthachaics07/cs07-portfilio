@@ -13,7 +13,7 @@ class ScrollToTopBtn {
 
     window.addEventListener("scroll", function () {
       // Show button when scrolls down 20px from the top
-      if (document.body.scrollTop > 7000 || document.documentElement.scrollTop > 7000) {
+      if (document.body.scrollTop > 7600 || document.documentElement.scrollTop > 7600) {
         scrollToTopBtn.style.display = "block";
       } else {
         scrollToTopBtn.style.display = "none";
