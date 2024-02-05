@@ -12,7 +12,7 @@ class ScrollToTopBtn {
 
     window.addEventListener("scroll", function () {
       // Show button when scrolls down 8200px from the top
-      if (document.body.scrollTop > 8200 || document.documentElement.scrollTop > 8200) {
+      if (document.body.scrollTop > 8500 || document.documentElement.scrollTop > 8500) {
         scrollToTopBtn.style.display = "block";
       } else {
         scrollToTopBtn.style.display = "none";
@@ -28,7 +28,7 @@ class ScrollToTopBtn {
 
     scrollToTopBtn.addEventListener("click", function () {
       // Smooth scroll to the top of the page
-      scrollToTop(1000); // Adjust the duration (in milliseconds)
+      scrollToTop(500); // Adjust the duration (in milliseconds)
     });
 
     function scrollToTop(duration) {
