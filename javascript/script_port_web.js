@@ -16,6 +16,7 @@ class AntiCopyPaste {
   disableEvent(event) {
     event.preventDefault();
     event.stopPropagation();
+    event.stopImmediatePropagation(); // stop event
     return false;
   }
 }
