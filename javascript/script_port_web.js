@@ -29,13 +29,13 @@ class StickyNavigation {
     constructor() {
       this.currentId = null;
       this.currentTab = null;
-      this.tabContainerHeight = 70;
+      this.tabContainerHeight = 70; // ความสูงของ Tab
       let self = this;
-      $('.et-hero-tab').click(function() { 
+      $('.et-hero-tab').click(function() {  // กดปุ่ม
         self.onTabClick(event, $(this)); 
       });
-      $(window).scroll(() => { this.onScroll(); });
-      $(window).resize(() => { this.onResize(); });
+      $(window).scroll(() => { this.onScroll(); }); // ตรวจตำแหน่งScroll
+      $(window).resize(() => { this.onResize(); }); // ตรวจตำแหน่งResize
     }
     
   /**
