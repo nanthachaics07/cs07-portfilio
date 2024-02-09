@@ -21,8 +21,8 @@ class AntiCopyPaste {
   }
 }
 
-// สร้างอ็อบเจกต์ของคลาส AntiCopyPaste เพื่อเริ่มต้นการป้องกันคัดลอกข้อความ
-const antiCopyPaste = new AntiCopyPaste();
+new AntiCopyPaste();
+
 
 
 class StickyNavigation {
