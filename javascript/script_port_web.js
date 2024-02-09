@@ -1,6 +1,28 @@
 
 
 //  ปล.ใช้ extension auto comment เอา ##############################################################
+class AntiCopyPaste {
+  constructor() {
+    this.disableSelection();
+  }
+  // set event 
+  disableSelection() {
+    window.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('selectstart', this.disableEvent);
+      document.addEventListener('contextmenu', this.disableEvent);
+    });
+  }
+  // anti-copy-paste
+  disableEvent(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+  }
+}
+
+// สร้างอ็อบเจกต์ของคลาส AntiCopyPaste เพื่อเริ่มต้นการป้องกันคัดลอกข้อความ
+const antiCopyPaste = new AntiCopyPaste();
+
 
 class StickyNavigation {
 	
@@ -68,10 +90,10 @@ class StickyNavigation {
       let newCurrentTab;
       let self = this;
       $('.et-hero-tab').each(function() {
-        let id = $(this).attr('href');
+        let id = $(this).attr('href'); // get the ID of the tab
         let offsetTop = $(id).offset().top - self.tabContainerHeight;
         let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
-        if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+        if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) { // check if the tab is in the viewport
           newCurrentId = id;
           newCurrentTab = $(this);
         }
@@ -90,7 +112,7 @@ class StickyNavigation {
     setSliderCss() {
       let width = 0;
       let left = 0;
-      if(this.currentTab) {
+      if(this.currentTab) { // if there is a current tab
         width = this.currentTab.css('width');
         left = this.currentTab.offset().left;
       }
@@ -106,6 +128,7 @@ new StickyNavigation();
 
 
 // เปิดเพจเดียว
+// Anti Ope Another Page
 class onetapToOpenImage {
 
   showImageClick = document.getElementById("clickMeImage");
