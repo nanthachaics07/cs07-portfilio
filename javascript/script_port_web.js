@@ -1,6 +1,8 @@
 
 
 //  ปล.ใช้ extension auto comment เอา ##############################################################
+
+//อยากจะ Copy ละซิ 55555555555555
 class AntiCopyPaste {
   constructor() {
     this.disableSelection();
