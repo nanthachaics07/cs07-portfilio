@@ -280,7 +280,7 @@ a {
   border-left: 1px solid #565656;
   padding: 2rem;
   position:sticky;
-  top: 0;
+  top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -567,9 +567,9 @@ a {
 .thanks{
   text-align: center;
   padding-top: 60px ;
-  padding-bottom: 80px;
-  /* position: absolute;
-  top: 50%;
+  padding-bottom: 60px;
+  /* position: relative; */
+  /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
 }
@@ -584,8 +584,7 @@ a {
   justify-content: center;
   padding: 15px;
   display: flex;
-  background-color: #27e187
-
+  background-color: #27e187;
 }
 
 
