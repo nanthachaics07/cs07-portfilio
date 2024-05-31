@@ -87,6 +87,7 @@ var StickyNavigation = /** @class */ (function () {
   return StickyNavigation;
 })();
 new StickyNavigation();
+
 var OnetapToOpenImage = /** @class */ (function () {
   function OnetapToOpenImage() {
     var _this = this;
@@ -100,3 +101,4 @@ var OnetapToOpenImage = /** @class */ (function () {
 })();
 // Instantiate the class
 new OnetapToOpenImage();
+
