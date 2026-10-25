@@ -6,7 +6,7 @@ describe('SideMenu', () => {
   it('renders profile and document links', () => {
     render(<SideMenu />);
     expect(screen.getByRole('heading', { name: /nanthachai intarpradit/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /mail me/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /email me/i })).toHaveAttribute(
       'href',
       'mailto:nanthachai.safecs07@gmail.com',
     );
