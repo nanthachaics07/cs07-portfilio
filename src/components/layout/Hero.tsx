@@ -9,8 +9,9 @@ export default function Hero() {
           <div className="hero-text">
             <h1 className="hero_title">Hello, it&apos;s me Safe</h1>
             <p className="hero_desc">
-              &quot;The bast way to predict the future is to{' '}
-              <span style={{ color: '#27e187' }}>create</span> it&quot;
+              &quot;The best way to predict the future
+              <br />
+              is to <span style={{ color: '#27e187' }}>create</span> it&quot;
             </p>
           </div>
         </div>
