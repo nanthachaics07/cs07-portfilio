@@ -33,6 +33,15 @@
   line-height: 1.75;
 }
 
+.list-project-item--highlight {
+  color: #ecde35;
+  font-weight: bolder;
+}
+
+.service-group__accent {
+  color: #27e187;
+}
+
 .list-project-top {
   padding-bottom: var(--space-1);
 }
