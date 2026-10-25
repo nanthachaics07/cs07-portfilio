@@ -1,0 +1,232 @@
+/* Breakpoints spanning layout + sections (keep in one file). */
+
+@media (max-width: 960px) {
+  .main {
+    display: block;
+  }
+
+  .sidemenu {
+    align-self: auto;
+    min-height: auto;
+    width: 100%;
+    max-width: none;
+    margin: auto;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .sidemenu__sticky {
+    position: relative;
+    top: auto;
+    max-height: none;
+    overflow-y: visible;
+    padding: 1rem;
+  }
+
+  .avatar--cover {
+    position: relative;
+    height: 310px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .btn a[title='CONTACT ME'] {
+    text-decoration: none;
+    color: #1f1f1f;
+    display: contents;
+    cursor: pointer;
+  }
+
+  .btn a:hover {
+    text-decoration: none;
+    color: #27e187;
+    display: contents;
+  }
+
+  .btn--line a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .btn--line a:hover {
+    text-decoration: none;
+    color: #1f1f1f;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 810px) {
+  .contact--cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact--cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolio--cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .intro--flex--container {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    margin-top: 1rem;
+  }
+
+  .intro--flex--container .intro-stat__number,
+  .intro--flex--container p {
+    margin-top: 0;
+  }
+
+  .intro h2.intro__title {
+    font-size: 3rem;
+  }
+
+  .intro-stat__number {
+    font-size: 3rem;
+  }
+
+  .avatar--cover {
+    position: relative;
+    height: 340px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: #fff;
+    display: contents;
+    cursor: pointer;
+  }
+
+  .btn a:hover {
+    text-decoration: none;
+    color: #27e187;
+    display: contents;
+  }
+
+  .btn--line a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .btn--line a:hover {
+    text-decoration: none;
+    color: #1f1f1f;
+  }
+
+  .project {
+    font-size: 1.1rem;
+  }
+
+  .project:hover {
+    font-size: 1.1rem;
+  }
+
+  .sidemenu {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro h2.intro__title {
+    font-size: 1.9rem;
+  }
+
+  .intro-stat__number {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 1rem;
+    padding-block: 2.5rem;
+  }
+
+  .avatar--cover {
+    position: relative;
+    height: 310px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: #fff;
+    display: contents;
+    cursor: pointer;
+  }
+
+  .btn a:hover {
+    text-decoration: none;
+    color: #27e187;
+    display: contents;
+  }
+
+  .btn--line a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .btn--line a:hover {
+    text-decoration: none;
+    color: #1f1f1f;
+  }
+
+}
+
+@media (min-width: 2200px) {
+  .sidemenu {
+    min-width: 380px;
+    max-width: 400px;
+  }
+}

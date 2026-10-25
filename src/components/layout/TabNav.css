@@ -1,0 +1,89 @@
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--nav-height);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #27e187;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  padding-inline: max(var(--space-2), env(safe-area-inset-left))
+    max(var(--space-2), env(safe-area-inset-right));
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.et-hero-tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.et-hero-tabs-container--top {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: var(--touch-min);
+  min-height: var(--touch-min);
+  color: #000;
+  letter-spacing: 0.06rem;
+  transition: color 0.3s ease, background 0.3s ease;
+  font-size: clamp(0.75rem, 2.8vw, 1rem);
+  font-weight: bold;
+  white-space: nowrap;
+  padding-inline: clamp(var(--space-1), 2vw, var(--space-3));
+}
+
+.et-hero-tab__label--short {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .et-hero-tab {
+    flex: 0 0 auto;
+    letter-spacing: 0.02em;
+  }
+
+  .et-hero-tab__label--long {
+    display: none;
+  }
+
+  .et-hero-tab__label--short {
+    display: inline;
+  }
+}
+
+@media (hover: hover) {
+  .et-hero-tab:hover {
+    color: white;
+    background: rgba(14, 48, 24, 0.8);
+  }
+}
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #fff;
+  transition: left 0.3s ease, width 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .et-hero-tab,
+  .et-hero-tab-slider {
+    transition: none;
+  }
+}

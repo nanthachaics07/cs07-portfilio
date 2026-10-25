@@ -1,0 +1,113 @@
+/* Shared section chrome (container, headings, buttons, timeline). */
+
+.container {
+  padding: clamp(var(--space-4), 4vw, var(--space-6));
+}
+
+.top--title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 5px 16px;
+  border: 1px solid #565656;
+  width: fit-content;
+  border-radius: 2rem;
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-5);
+  max-width: var(--content-measure);
+  line-height: var(--line-tight);
+}
+
+.title span {
+  color: #27e187;
+}
+
+.btn {
+  padding: var(--space-2) var(--space-4);
+  background-color: #27e187;
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #1f1f1f;
+  border: 2px solid #27e187;
+}
+
+.btn:hover {
+  background-color: #1f1f1f;
+  color: #27e187;
+  transition: 0.3s;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  display: contents;
+  cursor: pointer;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  color: #27e187;
+  display: contents;
+}
+
+.btn--line {
+  padding: var(--space-2) var(--space-4);
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #565656;
+  color: #999;
+}
+
+.btn--line:hover {
+  background-color: #27e187;
+  border-color: #27e187;
+  color: #1f1f1f;
+  transition: 0.3s;
+}
+
+.btn--line a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn--line a:hover {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.experience {
+  padding-left: 2rem;
+  border-left: 1px solid #303030;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.experience:last-child {
+  padding-bottom: 0;
+}
+
+.date {
+  padding-bottom: 0.5rem;
+}
+
+.school {
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+}
+
+.circle {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 100%;
+  background-color: #565656;
+  top: 4px;
+  left: -8px;
+}

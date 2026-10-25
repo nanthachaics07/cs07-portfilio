@@ -1,0 +1,32 @@
+.contact {
+  height: auto;
+}
+
+.contact--cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact--card {
+  border: 2px solid #565656;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.contact--card p {
+  text-shadow: #565656;
+}
+
+.contact--card i {
+  font-size: 2rem;
+  color: #27e187;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.thanks {
+  text-align: center;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}

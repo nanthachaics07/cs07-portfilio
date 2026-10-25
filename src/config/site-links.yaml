@@ -1,0 +1,44 @@
+# External URLs and contact — edit here; components read via src/lib/siteLinks.ts
+contact:
+  email: nanthachai.safecs07@gmail.com
+  phone: "+66 80-9407678"
+
+social:
+  github: https://github.com/nanthachaics07
+  linkedin: https://www.linkedin.com/in/nanthachai-intarpradit-129799314/
+
+profile:
+  photo: https://drive.google.com/file/d/1p6W9BglAA-uzb9fRI6HgbJ5pjKdi8Ris/view?usp=drive_link
+
+pages:
+  cv: pages/cv.html
+  engLevel: pages/eng-lv.html
+
+certificates:
+  webPortfolio: https://drive.google.com/file/d/10-udsJxJ4Q141Kzu4hq9JP214Tyny5Dd/view?usp=drive_link
+  network: https://drive.google.com/file/d/1ThVWe3rHZDL9G5OmDaCdWSAXENjk4p9T/view?usp=drive_link
+
+projects:
+  peaInternship:
+    experiences: https://PEAinturnship.softr.app
+    presentation: https://www.canva.com/design/DAF39EOHueU/EPuYdBvsEK-Pzv-90rWEAA/edit?utm_content=DAF39EOHueU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+    treatise: https://drive.google.com/file/d/1f9cWA53N8jHZaweL3MrGH4yuA91G1HWC/view?usp=sharing
+  drowsiness:
+    presentation: https://drive.google.com/file/d/1nUD_1ejJYtZn9b_mQUJI4pZmHUXgvHSn/view?usp=sharing
+    sourceCode: https://github.com/nanthachaics07/face-detection
+    treatise: https://drive.google.com/file/d/109h5SaLrxo6FXZamWCCZ815sldjAJ3sM/view?usp=sharing
+  movieReview:
+    preview: "#"
+    frontend: https://github.com/nanthachaics07/MovieReview-FontEnd
+    backend: https://github.com/nanthachaics07/MovieReview-BackEnd
+  webPortfolio:
+    sourceCode: https://github.com/nanthachaics07/html-portfilio
+  deepLearning:
+    presentation: https://youtu.be/7Pri1pDFEQU?si=s9t-MmteGniobNTT
+    sourceCode: https://drive.google.com/file/d/1sJ-ptXPevNHQk5lJQA6X7oKtTsk9kcnm/view?usp=sharing
+  oracleGuide:
+    manual: https://drive.google.com/file/d/1-O7XQCiXlAP6nqKNc0EKAUBAUo-bJKXB/view?usp=sharing
+  hexagonalArchitecture:
+    sourceCode: https://github.com/nanthachaics07/Banking_Golang
+  goHttpRequest:
+    sourceCode: https://github.com/nanthachaics07/Go_httpRequest.git
