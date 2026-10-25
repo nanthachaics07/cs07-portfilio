@@ -1,0 +1,30 @@
+/* Main column + scroll targets (pairs with sticky tab nav). */
+
+.et-hero-tabs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 50;
+}
+
+.et-hero-tabs-container--top {
+  z-index: 50;
+}
+
+.et-main {
+  min-width: 0;
+  padding-block: var(--space-4) var(--space-4);
+}
+
+.et-slide {
+  scroll-margin-top: var(--nav-height);
+  padding-block: var(--space-5);
+}
+
+.et-slide:first-child {
+  padding-top: var(--space-4);
+}
+

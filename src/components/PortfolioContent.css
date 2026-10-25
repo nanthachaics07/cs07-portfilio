@@ -1,0 +1,55 @@
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  position: relative;
+  z-index: auto;
+  height: 100dvh;
+  min-height: 100dvh;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  padding: 0.65rem 1rem;
+  background: #27e187;
+  color: #121014;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.main {
+  max-width: 1300px;
+  margin: auto;
+  padding: var(--space-3) var(--space-4) 0;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  gap: var(--space-5);
+  align-items: stretch;
+}
+
+.main-column {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--content {
+  width: 100%;
+  min-width: 0;
+  flex: 1;
+}
+

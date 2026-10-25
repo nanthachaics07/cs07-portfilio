@@ -1,0 +1,21 @@
+.footer1 {
+  position: relative;
+  z-index: 40;
+  isolation: isolate;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-2) var(--space-4);
+  min-height: var(--footer-height);
+  display: flex;
+  background-color: #27e187;
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.footer1 p {
+  margin: 0;
+  color: #121014;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}

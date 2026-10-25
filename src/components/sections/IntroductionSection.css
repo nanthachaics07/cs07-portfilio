@@ -1,0 +1,33 @@
+.intro h2.intro__title {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.intro p {
+  margin-top: 2rem;
+}
+
+.intro h2.intro__title span {
+  color: #27e187;
+}
+
+.intro--flex--container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.intro--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro-stat__number {
+  font-size: 4rem;
+  color: #27e187;
+  font-weight: 600;
+  line-height: 1.1;
+}

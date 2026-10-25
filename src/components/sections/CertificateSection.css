@@ -1,0 +1,29 @@
+.portfolio--cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.full--cover {
+  position: relative;
+  height: 275px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.chips {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.chip {
+  padding: 5px 16px;
+  background-color: #303030;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
