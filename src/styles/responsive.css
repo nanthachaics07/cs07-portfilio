@@ -2,7 +2,6 @@
 
 @media (max-width: 960px) {
   .main {
-    padding: 0;
     display: block;
   }
 
@@ -122,11 +121,6 @@
     border-radius: 1rem;
   }
 
-  .et-hero-tab {
-    font-size: 0.8rem;
-    font-weight: bold;
-  }
-
   .btn a {
     text-decoration: none;
     color: #fff;
@@ -163,13 +157,6 @@
     width: 100%;
     height: auto;
     max-height: none;
-  }
-}
-
-@media (max-width: 550px) {
-  .et-hero-tab {
-    font-size: 0.75rem;
-    letter-spacing: 0.02em;
   }
 }
 

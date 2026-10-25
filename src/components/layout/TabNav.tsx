@@ -8,7 +8,8 @@ export default function TabNav() {
       <div className="et-hero-tabs-container">
         {PORTFOLIO_TABS.map((tab) => (
           <a key={tab.href} className="et-hero-tab" href={tab.href}>
-            {tab.label}
+            <span className="et-hero-tab__label et-hero-tab__label--long">{tab.label}</span>
+            <span className="et-hero-tab__label et-hero-tab__label--short">{tab.shortLabel}</span>
           </a>
         ))}
         <span className="et-hero-tab-slider" />

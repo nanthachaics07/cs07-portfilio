@@ -17,14 +17,15 @@ export type SectionId = (typeof SECTION_IDS)[keyof typeof SECTION_IDS];
 export type PortfolioTab = {
   href: `#${SectionId}`;
   label: string;
+  shortLabel: string;
 };
 
 export const PORTFOLIO_TABS: PortfolioTab[] = [
-  { href: `#${SECTION_IDS.introduction}`, label: 'Introduction' },
-  { href: `#${SECTION_IDS.about}`, label: 'About' },
-  { href: `#${SECTION_IDS.education}`, label: 'Education' },
-  { href: `#${SECTION_IDS.project}`, label: 'Project' },
-  { href: `#${SECTION_IDS.skill}`, label: 'Skill' },
-  { href: `#${SECTION_IDS.certificate}`, label: 'Certificate' },
-  { href: `#${SECTION_IDS.contact}`, label: 'Contact' },
+  { href: `#${SECTION_IDS.introduction}`, label: 'Introduction', shortLabel: 'Intro' },
+  { href: `#${SECTION_IDS.about}`, label: 'About', shortLabel: 'About' },
+  { href: `#${SECTION_IDS.education}`, label: 'Education', shortLabel: 'Edu' },
+  { href: `#${SECTION_IDS.project}`, label: 'Project', shortLabel: 'Work' },
+  { href: `#${SECTION_IDS.skill}`, label: 'Skill', shortLabel: 'Skill' },
+  { href: `#${SECTION_IDS.certificate}`, label: 'Certificate', shortLabel: 'Certs' },
+  { href: `#${SECTION_IDS.contact}`, label: 'Contact', shortLabel: 'Contact' },
 ];

@@ -12,4 +12,10 @@
   --content-measure: 42rem;
   --line-body: 1.6;
   --line-tight: 1.35;
+  --bp-desktop: 961px;
+  --bp-tablet: 960px;
+  --bp-mobile: 720px;
+  --bp-narrow: 500px;
+  --page-gutter: var(--space-4);
+  --touch-min: 2.75rem;
 }

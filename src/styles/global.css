@@ -28,12 +28,12 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(1.9rem, 5vw, 4rem);
   color: #fff;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   color: #fff;
 }
 

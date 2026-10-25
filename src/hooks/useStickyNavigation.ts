@@ -151,8 +151,16 @@ export function useStickyNavigation(): void {
       }
     };
 
+    const tabContainer = document.querySelector<HTMLElement>('.et-hero-tabs-container');
+    const onTabStripScroll = () => {
+      if (currentIdRef.current) {
+        setSliderCss();
+      }
+    };
+
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onResize);
+    tabContainer?.addEventListener('scroll', onTabStripScroll, { passive: true });
     onScroll();
 
     return () => {
@@ -161,6 +169,7 @@ export function useStickyNavigation(): void {
       });
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onResize);
+      tabContainer?.removeEventListener('scroll', onTabStripScroll);
     };
   }, [checkTabContainerPosition, findCurrentTabSelector, onTabClick, setSliderCss]);
 }

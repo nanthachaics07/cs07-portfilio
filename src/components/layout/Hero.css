@@ -25,5 +25,23 @@
   transform: translate(-50%, -50%);
   color: white;
   width: min(92vw, 56rem);
-  padding-inline: var(--space-4);
+  padding-inline: max(var(--space-4), env(safe-area-inset-left));
+}
+
+@media (max-width: 720px) {
+  .hero-text {
+    top: 38%;
+    width: min(94vw, 56rem);
+    padding-inline: var(--space-3);
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-text {
+    top: 36%;
+  }
+
+  .hero_desc {
+    margin-top: var(--space-2);
+  }
 }
