@@ -12,6 +12,12 @@ export default function EducationSection() {
               <h2 className="title">Education &amp; <span>Experience</span></h2>
               <div>
                 <div className="experience">
+                  <p className="date">June 2025 - Present</p>
+                  <h3>Software Developer</h3>
+                  <p className="school">Super Coconut Co. Ltd</p>
+                  <div className="circle" />
+                </div>
+                <div className="experience">
                   <p className="date">July 2024 - May 2025</p>
                   <h3>Junior : Back-End Developer</h3>
                   <p className="school">GridWhiz Co. Ltd</p>
