@@ -1,11 +1,13 @@
 .intro h2.intro__title {
-  margin-top: 2rem;
-  font-size: 4rem;
+  margin-top: var(--space-4);
+  font-size: clamp(2rem, 6vw, 4rem);
   color: #fff;
 }
 
 .intro p {
-  margin-top: 2rem;
+  margin-top: var(--space-3);
+  max-width: var(--content-measure);
+  line-height: var(--line-body);
 }
 
 .intro h2.intro__title span {
@@ -15,7 +17,8 @@
 .intro--flex--container {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: clamp(var(--space-4), 5vw, var(--space-6));
+  margin-top: var(--space-4);
 }
 
 .intro--flex {

@@ -16,15 +16,31 @@
 
 .et-main {
   min-width: 0;
-  padding-block: var(--space-4) var(--space-4);
+  padding: 0;
 }
 
 .et-slide {
-  scroll-margin-top: var(--nav-height);
-  padding-block: var(--space-5);
+  scroll-margin-top: calc(var(--nav-height) + var(--space-2));
 }
 
-.et-slide:first-child {
+.et-slide + .et-slide {
+  border-top: 1px solid rgba(86, 86, 86, 0.45);
+}
+
+.et-slide:first-child .container {
   padding-top: var(--space-4);
 }
 
+.et-slide:last-child .container {
+  padding-bottom: var(--space-6);
+}
+
+@media (max-width: 960px) {
+  .et-slide:first-child .container {
+    padding-top: var(--space-3);
+  }
+
+  .et-slide:last-child .container {
+    padding-bottom: var(--space-5);
+  }
+}

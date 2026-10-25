@@ -1,7 +1,9 @@
 /* Shared section chrome (container, headings, buttons, timeline). */
 
-.container {
-  padding: clamp(var(--space-4), 4vw, var(--space-6));
+.et-main .container {
+  padding-inline: var(--content-gutter);
+  padding-block: var(--section-padding-y);
+  max-width: 100%;
 }
 
 .top--title {
@@ -16,8 +18,8 @@
 }
 
 .title {
-  margin-top: var(--space-4);
-  margin-bottom: var(--space-5);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
   max-width: var(--content-measure);
   line-height: var(--line-tight);
 }
