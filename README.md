@@ -46,7 +46,7 @@ Pushes to **`main`** run [`.github/workflows/deploy.yml`](.github/workflows/depl
    Live URL: [https://nanthachaics07.github.io/cs07-portfilio/](https://nanthachaics07.github.io/cs07-portfilio/)
 
 4. **Smoke-test in the browser**  
-   Click each tab (Introduction → Contact), open CV / Oxford links from the sidebar, and check layout on a narrow viewport (&lt; 550px hides the tab bar per CSS).
+   Click each tab (Introduction → Contact), open CV / Oxford links from the sidebar, and check layout on a narrow viewport (tabs scroll horizontally with short labels).
 
 5. **Optional (stronger confidence)**  
    Add Playwright (or similar) e2e tests for tab navigation and scroll — current Vitest tests are render/smoke only.
@@ -70,6 +70,7 @@ Pushes to **`main`** run [`.github/workflows/deploy.yml`](.github/workflows/depl
 | `src/components/sections/` | One file per page block (`IntroductionSection`, …) + `MainSections.tsx` |
 | `src/hooks/` | `useStickyNavigation.ts`, `useAntiCopy.ts` |
 | `src/lib/asset.ts` | Public URL helper (`import.meta.env.BASE_URL`) |
+| `src/config/site-links.yaml` | External URLs, email, social, project links (loaded via `src/lib/siteLinks.ts`) |
 | `public/images/` | Image assets |
 | `public/pages/` | Static HTML (`cv.html`, `eng-lv.html`) |
 | `src/styles/` | Global + shared section + responsive CSS |
